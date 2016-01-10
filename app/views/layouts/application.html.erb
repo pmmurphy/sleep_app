@@ -10,5 +10,9 @@
 
 <%= yield %>
 
+	<% flash[:notice] if flash[:notice] %>
+
+	<% flash[:alert] if flash[:alert] %>
+
 </body>
 </html>

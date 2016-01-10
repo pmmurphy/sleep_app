@@ -1,0 +1,20 @@
+<h2>Create Your account here</h2>
+
+<%= form_for(@user) do |f| %>
+
+  <%= f.label :"first name" %>
+  <%= f.text_field :fname %>
+
+
+  <%= f.label :"last name" %>
+  <%= f.text_field :lname %>
+ 
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+ 
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+
+  <%= f.submit "Create my account" %>
+ 
+<% end %>
